@@ -27,5 +27,3 @@
     App컴포넌트로부터 받은 props중 handleRemove를 이용하여,
     State works중 해당 버튼의 아이디값만 제거하고 나머지를 다시 State로서 선언하여,
     리렌더링이 되도록 하였습니다.
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
