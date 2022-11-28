@@ -34,7 +34,9 @@ function App() {
       isDone: false,
     };
     setWorks([...works, newWork]);
-    // console.log(works);
+    //인풋태그value 제거하기위함
+    setTitle('');
+    setDesc('');
   };
   //Work 제거하기 버튼핸들러
   const removeWorkHandler = (id) => {
@@ -62,10 +64,11 @@ function App() {
         <div>My Todo List</div>
         <div>React</div>
       </div>
-      <div className="add-form">
+      <div className="input-div">
         <div className="input-bar">
           <div className="input-title">제목</div>
           <input
+            id="title-input"
             type="text"
             value={title}
             className="input-space"
@@ -73,6 +76,7 @@ function App() {
           />
           <div className="input-title">내용</div>
           <input
+            id="desc-input"
             type="text"
             value={desc}
             className="input-space"
