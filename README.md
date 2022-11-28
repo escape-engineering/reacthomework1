@@ -23,7 +23,7 @@ https://reacthomework1.vercel.app/
     console.log를 사용하여 여러군데를 찍어보다 발견하게되었다. 다시한번 console.log의 중요성을 깨닫게 되었다.
 
 
-## 컴포넌트별 구분
+## 3) 컴포넌트별 구분
 
 ### App컴포넌트
 
