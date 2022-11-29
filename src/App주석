@@ -1,0 +1,59 @@
+리액트 불러오기
+css불러오기
+Working컴포넌트 불러오기
+Done컴포넌트 불러오기
+
+APP컴포넌트 시작
+/
+works State초기값 만들기
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+title State초기값 만들기
+/
+desc State초기값 만들기
+/
+추가하기 버튼 Handler 함수
+    State에 추가할 새 State입력값 만들기
+        삭제하기 버튼때문에 난수형태로 id값 만듦
+        title은 input창의 value인 title과 동일
+        desc은 input창의 value인 desc과 동일
+        초기 isDone은 false로 지정
+/
+    State변경, 기존 works의 뒤에 새 newWork 붙임
+/
+    input창의 value = title인 값 비우기
+    input창의 value = desc인 값 비우기
+/
+/
+제거하기 버튼 Handler 함수
+/
+함수에 입력된 매개변수인 props.work.id값이 woks의 id값과 일치하지 않는 요소들로 새롭게 배열을 만듦
+/
+works State를 위에서 재배열한 해당 id값 제외한 배열으로 setState함
+/
+/
+State의 idDone값을 변경하기위한 버튼 Handler
+    매개변수인 props.work.id값이 일치하는 것을 works에서 인덱스 값을 찾는다.
+    새롭게 만들 works배열 만듦
+    만약 index값이 존재하는 값이라면,
+        만약 해당 인덱스의 isDone값이 false라면,
+            copyWorks의 해당 인덱스 값의 isDone을 true로 바꿔라.
+        만약 해당 인덱스의 isDone값이 true라면,
+            copyWorks의 해당 인덱스 값의 isDone을 false로 바꿔라.
+/
+/
+    works State값을 변경한 copyWorks의 값으로 변경한다.
+/

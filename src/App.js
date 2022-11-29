@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-import './components/Working';
 import Working from './components/Working';
 import Done from './components/Done';
 
@@ -28,7 +27,7 @@ function App() {
   //Work 추가하기 버튼핸들러
   const addWorkHandler = () => {
     const newWork = {
-      id: works.length + 1,
+      id: Math.random() * 100,
       title: title,
       desc: desc,
       isDone: false,
@@ -103,7 +102,7 @@ function App() {
                   handleChange={changeWorkHandler}
                   work={work}
                   key={work.id}
-                ></Working>
+                />
               );
             })}
         </div>
@@ -120,7 +119,7 @@ function App() {
                   handleChange={changeWorkHandler}
                   work={work}
                   key={work.id}
-                ></Done>
+                />
               );
             })}
         </div>
