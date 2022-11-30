@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import Working from './components/Working';
-import Done from './components/Done';
+import Todos from './components/Todos';
 
 function App() {
   //works 객체 기본State생성
@@ -97,7 +96,7 @@ function App() {
             })
             .map((work) => {
               return (
-                <Working
+                <Todos
                   handleRemove={removeWorkHandler}
                   handleChange={changeWorkHandler}
                   work={work}
@@ -114,7 +113,7 @@ function App() {
             })
             .map((work) => {
               return (
-                <Done
+                <Todos
                   handleRemove={removeWorkHandler}
                   handleChange={changeWorkHandler}
                   work={work}
