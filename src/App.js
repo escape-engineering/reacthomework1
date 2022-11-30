@@ -25,8 +25,9 @@ function App() {
   const [desc, setDesc] = useState('');
   //Work 추가하기 버튼핸들러
   const addWorkHandler = () => {
+    const lastId = works[works.length - 1].id;
     const newWork = {
-      id: Math.random() * 100,
+      id: lastId + 1,
       title: title,
       desc: desc,
       isDone: false,
